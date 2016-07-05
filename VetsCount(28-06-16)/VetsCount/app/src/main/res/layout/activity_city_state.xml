@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_theme"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/dim_5"
+                android:paddingLeft="@dimen/dim_5"
+                android:src="@drawable/logo_actionbar" />
+
+        </RelativeLayout>
+
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_light"
+            android:gravity="center"
+            android:padding="@dimen/dim_5"
+            android:text="Please Select Location"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/dim_14" />
+
+
+        <!--<com.app.vetscount.activities.RippleView-->
+
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--ripple:rv_centered="true"-->
+            <!--ripple:rv_rippleDuration="100"-->
+            <!--ripple:rv_zoom="true">-->
+
+            <RelativeLayout
+                android:id="@+id/autoDetectLocationRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_15"
+                android:layout_marginRight="@dimen/dim_15"
+                android:layout_marginTop="@dimen/dim_20"
+
+                android:background="@drawable/button_rounded"
+                android:padding="@dimen/dim_15">
+
+                <com.app.vetscount.textstyle.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/icn_location_detect"
+                    android:drawablePadding="@dimen/dim_10"
+                    android:gravity="center"
+                    android:text="Auto Detect Location"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim_16" />
+            </RelativeLayout>
+        <!--</com.app.vetscount.activities.RippleView>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:layout_marginRight="@dimen/dim_15"
+            android:layout_marginTop="@dimen/dim_20">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/orTxt"
+                android:background="@drawable/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/orTxt"
+                android:background="@drawable/line_gray" />
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:id="@+id/orTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_5"
+                android:gravity="center"
+                android:text="Or"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/dim_16" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:layout_marginRight="@dimen/dim_15"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/input">
+
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/drop_search"
+                android:padding="@dimen/dim_10"
+                android:textColor="@color/grey_dark"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/dim_16" />
+
+            <Spinner
+                android:id="@+id/stateSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim_5"
+                android:layout_marginLeft="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_35"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@null"
+                android:spinnerMode="dialog"
+                android:textColor="@color/grey_dark"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/dim_16" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:layout_marginRight="@dimen/dim_15"
+            android:layout_marginTop="@dimen/dim_18"
+            android:background="@drawable/input">
+
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/drop_search"
+                android:padding="@dimen/dim_10"
+                android:textColor="@color/grey_dark"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/dim_16" />
+
+            <Spinner
+                android:id="@+id/citySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim_5"
+                android:layout_marginLeft="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_35"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@null"
+                android:spinnerMode="dialog"
+                android:textColor="@color/grey_dark"
+                android:textColorHint="@color/grey_dark"
+                android:textSize="@dimen/dim_16" />
+
+        </FrameLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/stateAutoTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:layout_marginRight="@dimen/dim_15"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/input"
+            android:completionThreshold="1"
+            android:hint="Please Enter State"
+            android:inputType="text"
+            android:padding="@dimen/dim_10"
+            android:textColor="@color/grey_dark"
+
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/dim_16"
+            android:visibility="gone" />
+
+        <AutoCompleteTextView
+            android:id="@+id/cityAutoTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:layout_marginRight="@dimen/dim_15"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/input"
+            android:completionThreshold="1"
+            android:hint="Please Enter City"
+            android:inputType="text"
+            android:padding="@dimen/dim_10"
+            android:textColor="@color/grey_dark"
+            android:textColorHint="@color/grey_dark"
+            android:textSize="@dimen/dim_16"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.app.vetscount.activities.RippleView
+
+        android:id="@+id/nextRV"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ripple:rv_centered="true"
+        ripple:rv_rippleDuration="100"
+        ripple:rv_zoom="true">
+
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/blue_theme"
+            android:drawableRight="@drawable/arrow_next_white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dim_15"
+            android:paddingRight="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_15"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_16" />
+    </com.app.vetscount.activities.RippleView>
+
+</RelativeLayout>

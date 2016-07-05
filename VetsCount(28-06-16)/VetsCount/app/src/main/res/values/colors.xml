@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e4e4e</color>
+    <color name="colorPrimaryDark">#4e4e4e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_light">#e6e6e6</color>
+    <color name="grey_dark">#999999</color>
+
+
+    <color name="blue_bar_bottom">#6177ec</color>
+    <color name="blue_symptom_dark">#5264c6</color>
+    <color name="red_search">#d13d5e</color>
+    <color name="black_light">#4e4e4e</color>
+    <color name="red_selected">#04b5fb</color>
+    <color name="orange">#de9090</color>
+
+    <color name="blue_light">#e0eaf1</color>
+
+    <color name="blue_purple">#FF2423C6</color>
+    <color name="green">#3e8272</color>
+    <color name="red_dark">#370403</color>
+    <color name="blue_theme">#0b3956</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="blue_action_bar">#0d4361</color>
+    <color name="blue_offer_bg">#d0dce4</color>
+
+</resources>

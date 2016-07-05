@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Boomer" />
+
+	<title>About Us</title>
+    <link type="text/css" href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+<!--<div class="container">
+    <div class="tab_heading">About Us</div>
+</div>-->
+
+<div class="container bg_new">
+    <div class="padding_20 ln_hgt">
+        <p>OurTown.com is a privately owned company based in Cincinnati, Ohio which was created in 2007 by a group of “news junkies”.  OurTown grew out of our own interest in what was happening in our own city and evolved into a branded, hyper-local news platform.
+        </p>
+        
+        <p class="padding_top_bottom">
+            OurTown started out with 70,000 local sites covering every populated zip code in the United States delivering local news, views, search and commerce. We have since overhauled our approach and have become a real time mobile source for truly hyper local news.
+        </p>
+        
+        <p class="padding_top_bottom">
+            When OurTown started we licensed Local Editors to build and run individual local news sites to help bring relative news content to their individual comminutes making up our entire local news network.  We have since modernized our concept with a mobile first platform that is based on individual creators who bring relative content to our users.
+        </p>
+        
+        
+    </div>
+</div>
+
+<div class="container bg_new">
+    <div class="spna_bg padding_10">Information:</div>
+    <div class="padding_10">
+        312 Walnut Street<br />
+        Suite 2275<br />
+        Cincinnati, Ohio 45209<br />
+        <!--<b>Email</b> - <a href="mailto:support@OurTown.com">support@OurTown.com</a><br />-->
+        <b>Email</b> - support@OurTown.com</a><br />
+        Phone - 513-381-0777<br /><br />
+    </div>
+</div>
+
+<div class="container bg_new">
+    <div class="spna_bg padding_10">Features</div>
+    <div class="padding_10">
+        <h2>Feeds</h2>
+        <p class="padding_5 ln_hgt">
+            OurTown offers 3 different feeds types that allow our users to discover truly hyper local and relevant news around them:<br /><br />
+            <b>Local</b> - Which shows local news posts based on your location.  This feed will change as your location changes.<br /><br />
+            <b>Subscription</b> - Which shows all the different posts from people who you have subscribed to / followed on OurTown.<br /><br />
+            <b>Trending</b> - Which shows you the most popular stories from all over the United States / World based off of post views and interaction.
+        </p>
+        
+        <h2>Posts</h2>
+        <p class="padding_5 ln_hgt">
+            OurTown offers 4 different post types that allows our users to post real time news:<br /><br />
+            <b>Article</b> | <b>Video</b> | <b>Event</b> | <b>Image</b>
+        </p>
+        
+        <h2>Post Interaction</h2>
+        <p class="padding_5 ln_hgt">
+            OurTown also focused on complete post interaction allowing our users to like, dislike, comment, share and flag a post. Our comments section is run by Facebook comments.
+        </p>
+        
+        <h2>Message</h2>
+        <p class="padding_5 ln_hgt">
+            OurTown Messages are private messages that you can send to individual users across the OurTown mobile network. You are able to send text, images and even video over our messaging system.
+        </p>
+        
+        <h2>Search</h2>
+        <p class="padding_5 ln_hgt">
+            OurTown Search will allow all users to use keywords to search through all posts (including titles, descriptions, and events). Search along with our trending feed will make it possible for our users to find all posts within the OurTown network whether they be local or not.
+        </p>
+    </div>
+        
+</div>
+
+</body>
+</html>

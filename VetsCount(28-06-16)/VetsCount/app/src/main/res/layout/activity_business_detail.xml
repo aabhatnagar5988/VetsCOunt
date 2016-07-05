@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_theme"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10">
+
+        <ImageView
+            android:id="@+id/businessImgView"
+            android:layout_width="@dimen/dim_100"
+            android:layout_height="@dimen/dim_100"
+            android:background="@drawable/image_bg_rounded" />
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:id="@+id/businessNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10"
+            android:singleLine="true"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_light"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:id="@+id/phoneTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="all"
+                android:drawableLeft="@drawable/icn_call"
+                android:drawablePadding="@dimen/dim_5"
+                android:gravity="center_vertical"
+
+                android:singleLine="true"
+
+                android:textColor="@color/blue_theme"
+                android:textSize="@dimen/dim_14" />
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:id="@+id/emailTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:autoLink="all"
+                android:drawableLeft="@drawable/icn_email"
+                android:drawablePadding="@dimen/dim_5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+
+                android:textColor="@color/blue_theme"
+                android:textSize="@dimen/dim_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:id="@+id/websiteTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:autoLink="all"
+                android:drawableLeft="@drawable/icn_web"
+                android:drawablePadding="@dimen/dim_5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+
+                android:textColor="@color/blue_theme"
+                android:textSize="@dimen/dim_14" />
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:id="@+id/categoryTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:autoLink="all"
+                android:drawableLeft="@drawable/icn_category"
+                android:drawablePadding="@dimen/dim_5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+
+                android:textColor="@color/blue_theme"
+                android:textSize="@dimen/dim_14" />
+        </LinearLayout>
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:id="@+id/addressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/dim_10"
+            android:autoLink="all"
+            android:drawableLeft="@drawable/icn_address"
+            android:drawablePadding="@dimen/dim_10"
+            android:gravity="center_vertical"
+
+            android:textColor="@color/blue_theme"
+            android:textSize="@dimen/dim_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_2"
+        android:background="@color/grey_dark" />
+
+    <com.app.vetscount.activities.RippleView
+
+        android:id="@+id/navigateRV"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_15"
+        ripple:rv_centered="true"
+        ripple:rv_rippleDuration="100"
+        ripple:rv_zoom="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:padding="@dimen/dim_15">
+
+            <com.app.vetscount.textstyle.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/icn_location_detect"
+                android:drawablePadding="@dimen/dim_10"
+                android:gravity="center"
+                android:text="Navigate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim_16" />
+        </RelativeLayout>
+    </com.app.vetscount.activities.RippleView>
+
+    <com.app.vetscount.textstyle.RegularTextView
+        android:id="@+id/offerFromTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_theme"
+        android:gravity="left"
+        android:padding="@dimen/dim_5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_16" />
+
+    <ListView
+        android:id="@+id/offersListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/blue_theme"
+        android:dividerHeight="@dimen/dim_1"></ListView>
+</LinearLayout>

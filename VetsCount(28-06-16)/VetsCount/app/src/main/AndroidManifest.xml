@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.vetscount">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="standard"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCA-H-hEq-klX9q3-EsXmaW0CwVsLFCKfU" />
+
+        <activity
+            android:name=".activities.CityStateActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BusinessOffersActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.BusinessCategoriesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BusinessDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LocationOnMapActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".activities.LocationOnMapActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".activities.SplahActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

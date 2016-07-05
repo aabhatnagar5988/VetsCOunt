@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_70"
+
+    android:background="@color/blue_light"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/businessImgView"
+        android:layout_width="@dimen/dim_70"
+        android:layout_height="@dimen/dim_70" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_toLeftOf="@+id/arrowImg"
+        android:layout_toRightOf="@+id/businessImgView"
+        android:orientation="vertical">
+
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:id="@+id/businessNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/blue_theme"
+            android:textSize="@dimen/dim_14" />
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:id="@+id/businessAddTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_5"
+            android:singleLine="true"
+
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/dim_13" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrowImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dim_10"
+        android:src="@drawable/arrow_next" />
+</RelativeLayout>

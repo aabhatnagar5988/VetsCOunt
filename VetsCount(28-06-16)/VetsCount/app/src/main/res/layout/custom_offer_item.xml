@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_light"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dim_5"
+    android:paddingTop="@dimen/dim_5">
+
+
+    <com.app.vetscount.textstyle.RegularTextView
+        android:id="@+id/offerTxtView"
+        android:layout_width="@dimen/dim_70"
+        android:layout_height="@dimen/dim_70"
+        android:layout_centerVertical="true"
+        android:background="@color/blue_offer_bg"
+        android:gravity="center"
+        android:textColor="@color/blue_theme"
+        android:textSize="@dimen/dim_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_toLeftOf="@+id/arrowImg"
+        android:layout_toRightOf="@+id/offerTxtView"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:id="@+id/offerNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_theme"
+            android:textSize="@dimen/dim_14" />
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:id="@+id/businessNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_1"
+
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/dim_13" />
+
+        <com.app.vetscount.textstyle.RegularTextView
+            android:id="@+id/businessAddTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_1"
+
+            android:textColor="@color/grey_dark"
+
+            android:textSize="@dimen/dim_13" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrowImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dim_10"
+        android:src="@drawable/arrow_next"
+        android:visibility="gone" />
+</RelativeLayout>
